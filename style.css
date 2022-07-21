@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 600px;
+    background-image: url(./assets/images/capa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+header div h1 {
+    font-size: 80px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+    padding: 5px;
+}
+
+header div h2 {
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+    padding: 5px;
+}
+
+header nav {
+    background-color: #FA6594;
+}
+
+header nav ul a {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+header nav ul {
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#mensagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/images/bg-mensagem.png);
+    padding: 120px 0px;
+    text-align: center;
+}
+
+#mensagem div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+}
+
+#img-balao {
+    align-self: center;
+}
+
+#mensagem h2 {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 50px;
+    color: #D84579;
+    margin-bottom: 50px;
+}
+
+#mensagem p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    color: #D84579;
+    padding: 20px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/images/bg-info.png);
+    padding: 120px 0px 0px 0px;
+}
+
+#info h2 {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px;
+    gap: 10px;
+}
+
+#info h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    color: white;
+}
+
+#info p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+#info-images {
+    margin-top: 50px;
+}
+
+#presenca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/images/bg-presenca.png);
+    padding: 0px 0px 120px 0px;
+    text-align: center;
+}
+
+#div-bandeiras {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#presenca h2 {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#bandeira-data {
+    width: 407px;
+    height: 138px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/images/icon-fita.png);
+    margin-bottom: 50px;
+}
+
+#bandeira-data p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    color: white;
+    padding-bottom: 50px;
+}
+
+#card-confirmacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+#card-confirmacao p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+#agradecimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/images/bg-agradecimento.png);
+    padding: 120px 0px;
+    text-align: center;
+}
+
+#agradecimentos h2 {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 50px;
+    text-shadow: black 1px 1px 1px;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 60px !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+
+    p {
+        font-size: 15px !important;
+    }
+
+    a {
+        font-size: 15px !important;
+    }
+
+    #pipa-esq {
+        display: none;
+    }
+
+    #pipa-dir {
+        display: none;
+    }
+
+    #bandeira-esq {
+        display: none;
+    }
+
+    #bandeira-dir {
+        width: 250px;
+    }
+
+    #div-bandeiras {
+        justify-content: flex-end;
+    }
+
+    #img-festa {
+        width: 350px;
+    }
+
+    #relogio {
+        width: 50px;
+    }
+
+    #estrela {
+        width: 70px;
+    }
+
+    #bandeira-data {
+        width: 250px;
+        height: 80px;
+        background-size: 250px;
+        background-repeat: no-repeat;
+    }
+
+    #bandeira-data p {
+        padding-bottom: 30px;
+    }
+
+    #mensagem div{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 400px) {
+    header nav ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header nav ul a {
+        padding: 10px;
+    }
+
+    #bandeira-dir {
+        width: 200px;
+    }
+
+    #div-bandeiras {
+        justify-content: flex-end;
+    }
+
+    #img-festa {
+        width: 250px;
+    }
+
+    #bandeira-data {
+        width: 200px;
+        height: 70px;
+        background-size: 200px;
+        background-repeat: no-repeat;
+    }
+}
